@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     # getting data by looking into divs
     div = soup.find('div', {'class': 'markdown-body my-3'})
-    div2 = div.find('div', {'class': 'snippet-clipboard-content position-relative overflow-auto'})
+    div2 = div.find('div', {'class': 'snippet-clipboard-content notranslate position-relative overflow-auto'})
     pre = div2.find_all('pre')
 
     text = list(str(pre[0].text))
